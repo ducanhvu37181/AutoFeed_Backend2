@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "AutoFeed_Backend_Repositories\\BasicRepo\\GenericRepository.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Repositories\\BasicRepo\\GenericRepository.cs",
               "RelativeToolTip": "AutoFeed_Backend_Repositories\\BasicRepo\\GenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T15:43:03.568Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "AutoFeed_Backend\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-03T15:29:26.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T15:29:26.383Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "AutoFeed_Backend_DAO\\Models\\AutoFeedDBContext.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T14:43:08.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T14:43:08.679Z"
             }
           ]
         }
