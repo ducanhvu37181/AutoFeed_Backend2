@@ -11,4 +11,17 @@ public class CreateScheduleDto
     public bool Status { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
+
+    public AutoFeed_Backend_DAO.Models.Schedule ToEntity() => new AutoFeed_Backend_DAO.Models.Schedule
+    {
+        SchedId = 0,
+        UserId = UserId,
+        TaskId = TaskId,
+        CbarnId = CbarnId,
+        Description = Description,
+        Status = Status,
+        StartDate = StartDate,
+        EndDate = EndDate,
+        CreatedDate = null
+    };
 }

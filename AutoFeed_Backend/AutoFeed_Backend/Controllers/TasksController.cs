@@ -1,6 +1,7 @@
 using AutoFeed_Backend_DAO.Models;
 using AutoFeed_Backend_Services.DTOs.Task;
-using AutoFeed_Backend_Services.Extensions;
+using AutoFeed_Backend_Services.DTOs.Responses;
+// mappings moved to DTO classes; extension methods removed
 using AutoFeed_Backend_Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
@@ -22,7 +23,8 @@ public class TasksController : ControllerBase
     public async Task<IActionResult> GetAll()
     {
         var items = await _service.GetAllAsync();
-        return Ok(items.Select(i => i.ToDto()));
+        var data = items.Select(i => AutoFeed_Backend_Services.DTOs.Task.TaskResponseDto.FromEntity(i)).ToList();
+        return Ok(AutoFeed_Backend_Services.DTOs.Responses.ApiResponse<System.Collections.Generic.List<AutoFeed_Backend_Services.DTOs.Task.TaskResponseDto>>.Ok(data));
     }
 
     [HttpGet("{id:int}")]
@@ -30,7 +32,8 @@ public class TasksController : ControllerBase
     {
         var item = await _service.GetByIdAsync(id);
         if (item == null) return NotFound();
-        return Ok(item.ToDto());
+        var resp = AutoFeed_Backend_Services.DTOs.Task.TaskResponseDto.FromEntity(item);
+        return Ok(AutoFeed_Backend_Services.DTOs.Responses.ApiResponse<AutoFeed_Backend_Services.DTOs.Task.TaskResponseDto>.Ok(resp));
     }
 
     [HttpPost]
@@ -39,7 +42,8 @@ public class TasksController : ControllerBase
         if (model == null) return BadRequest();
         var entity = model.ToEntity();
         var created = await _service.CreateAsync(entity);
-        return CreatedAtAction(nameof(Get), new { id = created.TaskId }, created.ToDto());
+        var dto = AutoFeed_Backend_Services.DTOs.Task.TaskResponseDto.FromEntity(created);
+        return CreatedAtAction(nameof(Get), new { id = created.TaskId }, AutoFeed_Backend_Services.DTOs.Responses.ApiResponse<AutoFeed_Backend_Services.DTOs.Task.TaskResponseDto>.Ok(dto, "Created"));
     }
 
     [HttpPut]
@@ -49,16 +53,17 @@ public class TasksController : ControllerBase
         // id must be provided in the body for update
         var entity = model.ToEntity();
         var ok = await _service.UpdateAsync(entity);
-        if (!ok) return NotFound();
-        return NoContent();
+        if (!ok) return NotFound(ApiResponse<object>.Fail("Not found"));
+        Response.Headers["X-Result"] = "Update success with body";
+        return Ok(ApiResponse<object>.Ok(null, "Update success"));
     }
 
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> Delete(int id)
     {
         var ok = await _service.DeleteAsync(id);
-        if (!ok) return NotFound();
+        if (!ok) return NotFound(ApiResponse<object>.Fail("Not found"));
         Response.Headers["X-Result"] = "Delete successfully";
-        return Ok(new { message = "Delete successfully" });
+        return Ok(ApiResponse<object>.Ok(null, "Delete successfully"));
     }
 }
