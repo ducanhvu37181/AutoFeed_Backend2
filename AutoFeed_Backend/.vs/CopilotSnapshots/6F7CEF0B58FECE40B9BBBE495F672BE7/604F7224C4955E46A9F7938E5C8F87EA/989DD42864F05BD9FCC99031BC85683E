@@ -1,4 +1,4 @@
-using AutoFeed_Backend_Services.DTOs.Schedule;
+﻿using AutoFeed_Backend_Services.DTOs.Schedule;
 using AutoFeed_Backend_Services.DTOs.Responses;
 using AutoFeed_Backend_Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -20,15 +20,7 @@ public class SchedulesController : ControllerBase
     public async Task<IActionResult> GetAll()
     {
         var items = await _service.GetAllAsync();
-        var data = items.Select(i => new ScheduleResponseDto
-        {
-            UserId = i.UserId,
-            TaskId = i.TaskId,
-            CbarnId = i.CbarnId,
-            Description = i.Description,
-            StartDate = i.StartDate,
-            EndDate = i.EndDate
-        }).ToList();
+        var data = items.Select(i => ScheduleResponseDto.FromEntity(i)).ToList();
         return Ok(ApiResponse<List<ScheduleResponseDto>>.Ok(data));
     }
 
@@ -37,15 +29,7 @@ public class SchedulesController : ControllerBase
     {
         var item = await _service.GetByIdAsync(id);
         if (item == null) return NotFound();
-        var resp = new ScheduleResponseDto
-        {
-            UserId = item.UserId,
-            TaskId = item.TaskId,
-            CbarnId = item.CbarnId,
-            Description = item.Description,
-            StartDate = item.StartDate,
-            EndDate = item.EndDate
-        };
+        var resp = ScheduleResponseDto.FromEntity(item);
         return Ok(ApiResponse<ScheduleResponseDto>.Ok(resp));
     }
 
@@ -53,29 +37,10 @@ public class SchedulesController : ControllerBase
     public async Task<IActionResult> Create([FromBody] CreateScheduleDto model)
     {
         if (model == null) return BadRequest();
-        var entity = new AutoFeed_Backend_DAO.Models.Schedule
-        {
-            SchedId = 0,
-            UserId = model.UserId,
-            TaskId = model.TaskId,
-            CbarnId = model.CbarnId,
-            Description = model.Description,
-            Status = model.Status,
-            StartDate = model.StartDate,
-            EndDate = model.EndDate,
-            CreatedDate = null
-        };
+        var entity = model.ToEntity();
         var created = await _service.CreateAsync(entity);
         if (created == null) return Conflict(ApiResponse<object>.Fail("User has an overlapping schedule or invalid data."));
-        var dto = new ScheduleResponseDto
-        {
-            UserId = created.UserId,
-            TaskId = created.TaskId,
-            CbarnId = created.CbarnId,
-            Description = created.Description,
-            StartDate = created.StartDate,
-            EndDate = created.EndDate
-        };
+        var dto = ScheduleResponseDto.FromEntity(created);
         return CreatedAtAction(nameof(Get), new { id = created.SchedId }, ApiResponse<ScheduleResponseDto>.Ok(dto, "Created"));
     }
 
@@ -83,18 +48,7 @@ public class SchedulesController : ControllerBase
     public async Task<IActionResult> Update([FromBody] UpdateScheduleDto model)
     {
         if (model == null) return BadRequest();
-        var entity = new AutoFeed_Backend_DAO.Models.Schedule
-        {
-            SchedId = model.SchedId,
-            UserId = model.UserId,
-            TaskId = model.TaskId,
-            CbarnId = model.CbarnId,
-            Description = model.Description,
-            Status = model.Status,
-            StartDate = model.StartDate,
-            EndDate = model.EndDate,
-            CreatedDate = model.SchedId == 0 ? null : model.StartDate
-        };
+        var entity = model.ToEntity();
         var ok = await _service.UpdateAsync(entity);
         if (!ok) return Conflict(ApiResponse<object>.Fail("User has an overlapping schedule or schedule not found."));
         Response.Headers["X-Result"] = "Update success with body";
