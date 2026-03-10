@@ -11,4 +11,8 @@
     <ProjectReference Include="..\AutoFeed_Backend_Repositories\AutoFeed_Backend_Repositories.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
 </Project>

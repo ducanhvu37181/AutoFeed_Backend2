@@ -1,0 +1,23 @@
+using System;
+
+namespace AutoFeed_Backend_Services.DTOs.Schedule;
+
+public class ScheduleResponseDto
+{
+    public int? UserId { get; set; }
+    public int? TaskId { get; set; }
+    public int? CbarnId { get; set; }
+    public string Description { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set; }
+
+    public static ScheduleResponseDto FromEntity(AutoFeed_Backend_DAO.Models.Schedule e) => new ScheduleResponseDto
+    {
+        UserId = e.UserId,
+        TaskId = e.TaskId,
+        CbarnId = e.CbarnId,
+        Description = e.Description,
+        StartDate = e.StartDate,
+        EndDate = e.EndDate
+    };
+}

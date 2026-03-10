@@ -13,4 +13,17 @@ public class ScheduleDto
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public DateTime? CreatedDate { get; set; }
+
+    public static ScheduleDto FromEntity(AutoFeed_Backend_DAO.Models.Schedule e) => new ScheduleDto
+    {
+        SchedId = e.SchedId,
+        UserId = e.UserId,
+        TaskId = e.TaskId,
+        CbarnId = e.CbarnId,
+        Description = e.Description,
+        Status = e.Status,
+        StartDate = e.StartDate,
+        EndDate = e.EndDate,
+        CreatedDate = e.CreatedDate
+    };
 }

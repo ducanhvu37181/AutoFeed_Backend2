@@ -1,6 +1,7 @@
 using AutoFeed_Backend_DAO.Models;
 using AutoFeed_Backend_Services.DTOs.Schedule;
-using AutoFeed_Backend_Services.Extensions;
+using AutoFeed_Backend_Services.DTOs.Responses;
+// mappings moved to DTO classes; extension methods removed
 using AutoFeed_Backend_Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +22,8 @@ public class SchedulesController : ControllerBase
     public async Task<IActionResult> GetAll()
     {
         var items = await _service.GetAllAsync();
-        return Ok(items.Select(i => i.ToDto()));
+        var data = items.Select(i => AutoFeed_Backend_Services.DTOs.Schedule.ScheduleResponseDto.FromEntity(i)).ToList();
+        return Ok(AutoFeed_Backend_Services.DTOs.Responses.ApiResponse<System.Collections.Generic.List<AutoFeed_Backend_Services.DTOs.Schedule.ScheduleResponseDto>>.Ok(data));
     }
 
     [HttpGet("{id:int}")]
@@ -29,7 +31,8 @@ public class SchedulesController : ControllerBase
     {
         var item = await _service.GetByIdAsync(id);
         if (item == null) return NotFound();
-        return Ok(item.ToDto());
+        var resp = AutoFeed_Backend_Services.DTOs.Schedule.ScheduleResponseDto.FromEntity(item);
+        return Ok(AutoFeed_Backend_Services.DTOs.Responses.ApiResponse<AutoFeed_Backend_Services.DTOs.Schedule.ScheduleResponseDto>.Ok(resp));
     }
 
     [HttpPost]
@@ -38,8 +41,9 @@ public class SchedulesController : ControllerBase
         if (model == null) return BadRequest();
         var entity = model.ToEntity();
         var created = await _service.CreateAsync(entity);
-        if (created == null) return Conflict("User has an overlapping schedule or invalid data.");
-        return CreatedAtAction(nameof(Get), new { id = created.SchedId }, created.ToDto());
+        if (created == null) return Conflict(AutoFeed_Backend_Services.DTOs.Responses.ApiResponse<object>.Fail("User has an overlapping schedule or invalid data."));
+        var dto = AutoFeed_Backend_Services.DTOs.Schedule.ScheduleResponseDto.FromEntity(created);
+        return CreatedAtAction(nameof(Get), new { id = created.SchedId }, AutoFeed_Backend_Services.DTOs.Responses.ApiResponse<AutoFeed_Backend_Services.DTOs.Schedule.ScheduleResponseDto>.Ok(dto, "Created"));
     }
 
     [HttpPut]
@@ -48,17 +52,17 @@ public class SchedulesController : ControllerBase
         if (model == null) return BadRequest();
         var entity = model.ToEntity();
         var ok = await _service.UpdateAsync(entity);
-        if (!ok) return Conflict("User has an overlapping schedule or schedule not found.");
+        if (!ok) return Conflict(ApiResponse<object>.Fail("User has an overlapping schedule or schedule not found."));
         Response.Headers["X-Result"] = "Update success with body";
-        return Ok(new { message = "Update success" });
+        return Ok(ApiResponse<object>.Ok(null, "Update success"));
     }
 
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> Delete(int id)
     {
         var ok = await _service.DeleteAsync(id);
-        if (!ok) return NotFound();
+        if (!ok) return NotFound(ApiResponse<object>.Fail("Not found"));
         Response.Headers["X-Result"] = "Delete successfully";
-        return Ok(new { message = "Delete successfully" });
+        return Ok(ApiResponse<object>.Ok(null, "Delete successfully"));
     }
 }
