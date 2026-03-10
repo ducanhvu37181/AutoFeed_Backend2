@@ -1,5 +1,5 @@
 -- ======================================================
--- 1. DATABASE CREATION
+-- 1. DATABASE SETUP
 -- ======================================================
 USE [master]
 GO
@@ -44,7 +44,7 @@ CREATE TABLE [dbo].[IoT_Device] (
     [deviceID] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     [name] NVARCHAR(100) NULL,
     [description] NVARCHAR(MAX) NULL,
-    [status] NVARCHAR(50) NULL
+    [status] BIT DEFAULT 1 -- Updated to Boolean/BIT
 );
 
 CREATE TABLE [dbo].[FlockChicken] (
@@ -61,7 +61,7 @@ CREATE TABLE [dbo].[Task] (
     [taskID] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     [title] NVARCHAR(100) NULL,
     [description] NVARCHAR(MAX) NULL,
-    [status] NVARCHAR(50) NULL
+    [status] BIT DEFAULT 0 -- Updated to Boolean/BIT
 );
 
 -- ======================================================
@@ -77,30 +77,28 @@ CREATE TABLE [dbo].[User] (
     [phone] NVARCHAR(20) NULL,
     [username] NVARCHAR(50) NULL UNIQUE,
     [lastLogin] DATETIME NULL,
-    [status] NVARCHAR(50) NULL,
+    [status] BIT DEFAULT 1, -- Updated to Boolean/BIT
     CONSTRAINT [FK_User_Role] FOREIGN KEY([roleID]) REFERENCES [dbo].[Role] ([roleID])
 );
 
--- Relationship table between Barn and Device (From new ERD)
 CREATE TABLE [dbo].[BarnIoT_Device] (
     [bDeviceID] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     [barnID] INT NULL,
     [deviceID] INT NULL,
     [installationDate] DATE NULL,
-    [status] NVARCHAR(50) NULL,
+    [status] BIT DEFAULT 1, -- Updated to Boolean/BIT
     CONSTRAINT [FK_BarnIoT_Barn] FOREIGN KEY([barnID]) REFERENCES [dbo].[Barn] ([barnID]),
     CONSTRAINT [FK_BarnIoT_Device] FOREIGN KEY([deviceID]) REFERENCES [dbo].[IoT_Device] ([deviceID])
 );
 
--- NEW REQUIREMENT: Data_IoT Table
 CREATE TABLE [dbo].[Data_IoT] (
     [dataID] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     [barnID] INT NOT NULL,
     [deviceID] INT NOT NULL,
     [value] DECIMAL(18, 4) NULL,
     [description] NVARCHAR(MAX) NULL,
-    [recordDate] DATETIME DEFAULT GETDATE(), -- Ngay + Gio
-    [sequenceNumber] INT NULL,                -- Lan thu may
+    [recordDate] DATETIME DEFAULT GETDATE(),
+    [sequenceNumber] INT NULL, -- "Lan thu may"
     CONSTRAINT [FK_DataIoT_Barn] FOREIGN KEY([barnID]) REFERENCES [dbo].[Barn] ([barnID]),
     CONSTRAINT [FK_DataIoT_Device] FOREIGN KEY([deviceID]) REFERENCES [dbo].[IoT_Device] ([deviceID])
 );
@@ -137,7 +135,7 @@ CREATE TABLE [dbo].[FoodStorage] (
 );
 
 -- ======================================================
--- 4. COMPLEX RELATIONSHIP TABLES (Level 2)
+-- 4. RELATIONSHIP TABLES (Level 2)
 -- ======================================================
 
 CREATE TABLE [dbo].[ChickenBarn] (
@@ -148,7 +146,7 @@ CREATE TABLE [dbo].[ChickenBarn] (
     [startDate] DATE NULL,
     [exportDate] DATE NULL,
     [note] NVARCHAR(MAX) NULL,
-    [status] NVARCHAR(50) NULL,
+    [status] BIT DEFAULT 1, -- Updated to Boolean/BIT
     CONSTRAINT [FK_CBarn_Barn] FOREIGN KEY([barnID]) REFERENCES [dbo].[Barn] ([barnID]),
     CONSTRAINT [FK_CBarn_Flock] FOREIGN KEY([flockID]) REFERENCES [dbo].[FlockChicken] ([flockID]),
     CONSTRAINT [FK_CBarn_LargeChicken] FOREIGN KEY([chickenLID]) REFERENCES [dbo].[LargeChicken] ([chickenLID])
@@ -176,7 +174,7 @@ CREATE TABLE [dbo].[FeedingRuleDetail] (
     [startDate] DATE NULL,
     [endDate] DATE NULL,
     [description] NVARCHAR(MAX) NULL,
-    [status] NVARCHAR(50) NULL,
+    [status] BIT DEFAULT 1, -- Updated to Boolean/BIT
     CONSTRAINT [FK_Detail_Food] FOREIGN KEY([foodID]) REFERENCES [dbo].[Food] ([foodID]),
     CONSTRAINT [FK_Detail_Rule] FOREIGN KEY([ruleID]) REFERENCES [dbo].[FeedingRule] ([ruleID])
 );
@@ -186,7 +184,7 @@ CREATE TABLE [dbo].[Report] (
     [userID] INT NULL,
     [type] NVARCHAR(50) NULL,
     [description] NVARCHAR(MAX) NULL,
-    [status] NVARCHAR(50) NULL,
+    [status] BIT DEFAULT 1, -- Updated to Boolean/BIT
     [createDate] DATETIME DEFAULT GETDATE(),
     CONSTRAINT [FK_Report_User] FOREIGN KEY([userID]) REFERENCES [dbo].[User] ([userID])
 );
@@ -196,7 +194,7 @@ CREATE TABLE [dbo].[Request] (
     [userID] INT NULL,
     [type] NVARCHAR(50) NULL,
     [description] NVARCHAR(MAX) NULL,
-    [status] NVARCHAR(50) NULL,
+    [status] BIT DEFAULT 0, -- Updated to Boolean/BIT
     [createdAt] DATETIME DEFAULT GETDATE(),
     CONSTRAINT [FK_Request_User] FOREIGN KEY([userID]) REFERENCES [dbo].[User] ([userID])
 );
@@ -207,7 +205,7 @@ CREATE TABLE [dbo].[Schedule] (
     [taskID] INT NULL,
     [CBarnID] INT NULL,
     [description] NVARCHAR(MAX) NULL,
-    [status] NVARCHAR(50) NULL,
+    [status] BIT DEFAULT 0, -- Updated to Boolean/BIT
     [startDate] DATETIME NULL,
     [endDate] DATETIME NULL,
     [createdDate] DATETIME DEFAULT GETDATE(),
