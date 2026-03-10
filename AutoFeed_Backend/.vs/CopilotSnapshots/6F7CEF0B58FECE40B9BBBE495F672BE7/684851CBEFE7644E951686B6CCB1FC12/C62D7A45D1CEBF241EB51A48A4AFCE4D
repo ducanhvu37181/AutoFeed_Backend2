@@ -1,0 +1,16 @@
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using ScheduleEntity = AutoFeed_Backend_DAO.Models.Schedule;
+
+namespace AutoFeed_Backend_Services.Interfaces;
+
+public interface IScheduleService
+{
+    Task<List<ScheduleEntity>> GetAllAsync();
+    Task<ScheduleEntity?> GetByIdAsync(int id);
+    // returns null if overlap
+    Task<ScheduleEntity?> CreateAsync(ScheduleEntity model);
+    // returns false if not found or overlap
+    Task<bool> UpdateAsync(ScheduleEntity model);
+    Task<bool> DeleteAsync(int id);
+}

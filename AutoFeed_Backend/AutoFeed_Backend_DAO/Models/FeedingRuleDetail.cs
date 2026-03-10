@@ -19,7 +19,7 @@ public partial class FeedingRuleDetail
 
     public string Description { get; set; }
 
-    public string Status { get; set; }
+    public bool? Status { get; set; }
 
     public virtual Food Food { get; set; }
 

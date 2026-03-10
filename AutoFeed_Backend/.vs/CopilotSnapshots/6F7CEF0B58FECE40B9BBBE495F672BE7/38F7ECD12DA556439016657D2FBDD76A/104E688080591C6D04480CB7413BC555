@@ -1,0 +1,48 @@
+﻿using Microsoft.EntityFrameworkCore;
+using AutoFeed_Backend_Services.Interfaces;
+using AutoFeed_Backend_Services.Services;
+using AutoFeed_Backend_Repositories.UnitOfWork;
+using Microsoft.OpenApi.Models;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllers();
+// Register DbContext
+builder.Services.AddDbContext<AutoFeed_Backend_DAO.Models.AutoFeedDBContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Register application services
+builder.Services.AddScoped<ITaskService, TaskService>();
+builder.Services.AddScoped<IScheduleService, ScheduleService>();
+// Register UnitOfWork
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+// Register unified service provider facade
+builder.Services.AddScoped<IServiceProviderFacade, ServiceProvider>();
+
+// Configure Swagger/OpenAPI
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "AutoFeed API", Version = "v1" });
+});
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+// Always enable Swagger UI and make it available at app root for convenience
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "AutoFeed API V1");
+    c.RoutePrefix = string.Empty;
+});
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

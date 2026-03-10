@@ -1,0 +1,14 @@
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using TaskEntity = AutoFeed_Backend_DAO.Models.Task;
+
+namespace AutoFeed_Backend_Services.Interfaces;
+
+public interface ITaskService
+{
+    Task<List<TaskEntity>> GetAllAsync();
+    Task<TaskEntity?> GetByIdAsync(int id);
+    Task<TaskEntity> CreateAsync(TaskEntity model);
+    Task<bool> UpdateAsync(TaskEntity model);
+    Task<bool> DeleteAsync(int id);
+}

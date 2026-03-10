@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AutoFeed_Backend_DAO\AutoFeed_Backend_DAO.csproj" />
+    <ProjectReference Include="..\AutoFeed_Backend_Repositories\AutoFeed_Backend_Repositories.csproj" />
+  </ItemGroup>
+
 </Project>

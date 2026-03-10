@@ -1,0 +1,7 @@
+﻿namespace AutoFeed_Backend_Services.Interfaces;
+
+public interface IServiceProviderFacade
+{
+    ITaskService TaskService { get; }
+    IScheduleService ScheduleService { get; }
+}

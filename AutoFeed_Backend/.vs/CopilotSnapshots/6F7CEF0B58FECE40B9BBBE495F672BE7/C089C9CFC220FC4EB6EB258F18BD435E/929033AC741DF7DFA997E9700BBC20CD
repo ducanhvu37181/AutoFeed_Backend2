@@ -1,0 +1,66 @@
+﻿using AutoFeed_Backend_DAO.Models;
+using AutoFeed_Backend_Services.DTOs;
+using AutoFeed_Backend_Services.Extensions;
+using AutoFeed_Backend_Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+
+namespace AutoFeed_Backend.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class TasksController : ControllerBase
+{
+    private readonly ITaskService _service;
+
+    public TasksController(AutoFeed_Backend_Services.Interfaces.IServiceProvider provider)
+    {
+        _service = provider.TaskService;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll()
+    {
+        var items = await _service.GetAllAsync();
+        return Ok(items.Select(i => i.ToDto()));
+    }
+
+    [HttpGet("{id:int}")]
+    public async Task<IActionResult> Get(int id)
+    {
+        var item = await _service.GetByIdAsync(id);
+        if (item == null) return NotFound();
+        return Ok(item.ToDto());
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create([FromBody] CreateTaskDto model)
+    {
+        if (model == null) return BadRequest();
+        var entity = model.ToEntity();
+        var created = await _service.CreateAsync(entity);
+        return CreatedAtAction(nameof(Get), new { id = created.TaskId }, created.ToDto());
+    }
+
+    [HttpPut("{id:int}")]
+    [Authorize]
+    public async Task<IActionResult> Update(int id, [FromBody] UpdateTaskDto model)
+    {
+        if (model == null) return BadRequest();
+        // Ensure the route id is authoritative
+        model.TaskId = id;
+        var entity = model.ToEntity();
+        var ok = await _service.UpdateAsync(entity);
+        if (!ok) return NotFound();
+        return NoContent();
+    }
+
+    [HttpDelete("{id:int}")]
+    [Authorize]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var ok = await _service.DeleteAsync(id);
+        if (!ok) return NotFound();
+        return NoContent();
+    }
+}

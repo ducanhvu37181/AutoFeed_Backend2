@@ -15,7 +15,7 @@ public partial class BarnIoTDevice
 
     public DateOnly? InstallationDate { get; set; }
 
-    public string Status { get; set; }
+    public bool? Status { get; set; }
 
     public virtual Barn Barn { get; set; }
 
