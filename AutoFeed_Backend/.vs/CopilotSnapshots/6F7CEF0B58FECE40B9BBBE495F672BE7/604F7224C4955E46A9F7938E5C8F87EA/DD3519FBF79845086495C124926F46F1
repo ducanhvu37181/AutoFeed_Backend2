@@ -1,4 +1,4 @@
-namespace AutoFeed_Backend_Services.DTOs.Task;
+﻿namespace AutoFeed_Backend_Services.DTOs.Task;
 
 public class TaskResponseDto
 {

@@ -5,12 +5,4 @@ public class CreateTaskDto
     public string Title { get; set; }
     public string Description { get; set; }
     public bool Status { get; set; }
-
-    public AutoFeed_Backend_DAO.Models.Task ToEntity() => new AutoFeed_Backend_DAO.Models.Task
-    {
-        TaskId = 0,
-        Title = Title,
-        Description = Description,
-        Status = Status
-    };
 }

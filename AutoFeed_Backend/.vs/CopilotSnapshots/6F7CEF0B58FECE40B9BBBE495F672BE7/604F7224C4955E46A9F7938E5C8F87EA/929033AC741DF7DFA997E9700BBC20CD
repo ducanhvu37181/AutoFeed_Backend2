@@ -1,4 +1,4 @@
-using AutoFeed_Backend_Services.DTOs.Task;
+﻿using AutoFeed_Backend_Services.DTOs.Task;
 using AutoFeed_Backend_Services.DTOs.Responses;
 using AutoFeed_Backend_Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +20,7 @@ public class TasksController : ControllerBase
     public async Task<IActionResult> GetAll()
     {
         var items = await _service.GetAllAsync();
-        var data = items.Select(i => new TaskResponseDto { Title = i.Title, Description = i.Description }).ToList();
+        var data = items.Select(i => TaskResponseDto.FromEntity(i)).ToList();
         return Ok(ApiResponse<List<TaskResponseDto>>.Ok(data));
     }
 
@@ -29,7 +29,7 @@ public class TasksController : ControllerBase
     {
         var item = await _service.GetByIdAsync(id);
         if (item == null) return NotFound();
-        var resp = new TaskResponseDto { Title = item.Title, Description = item.Description };
+        var resp = TaskResponseDto.FromEntity(item);
         return Ok(ApiResponse<TaskResponseDto>.Ok(resp));
     }
 
@@ -37,15 +37,9 @@ public class TasksController : ControllerBase
     public async Task<IActionResult> Create([FromBody] CreateTaskDto model)
     {
         if (model == null) return BadRequest();
-        var entity = new AutoFeed_Backend_DAO.Models.Task
-        {
-            TaskId = 0,
-            Title = model.Title,
-            Description = model.Description,
-            Status = model.Status
-        };
+        var entity = model.ToEntity();
         var created = await _service.CreateAsync(entity);
-        var dto = new TaskResponseDto { Title = created.Title, Description = created.Description };
+        var dto = TaskResponseDto.FromEntity(created);
         return CreatedAtAction(nameof(Get), new { id = created.TaskId }, ApiResponse<TaskResponseDto>.Ok(dto, "Created"));
     }
 
@@ -54,13 +48,7 @@ public class TasksController : ControllerBase
     {
         if (model == null) return BadRequest();
         // id must be provided in the body for update
-        var entity = new AutoFeed_Backend_DAO.Models.Task
-        {
-            TaskId = model.TaskId,
-            Title = model.Title,
-            Description = model.Description,
-            Status = model.Status
-        };
+        var entity = model.ToEntity();
         var ok = await _service.UpdateAsync(entity);
         if (!ok) return NotFound(ApiResponse<object>.Fail("Not found"));
         Response.Headers["X-Result"] = "Update success with body";
