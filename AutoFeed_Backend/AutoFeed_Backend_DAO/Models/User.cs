@@ -23,7 +23,7 @@ public partial class User
 
     public DateTime? LastLogin { get; set; }
 
-    public string Status { get; set; }
+    public bool? Status { get; set; }
 
     public virtual ICollection<Report> Reports { get; set; } = new List<Report>();
 

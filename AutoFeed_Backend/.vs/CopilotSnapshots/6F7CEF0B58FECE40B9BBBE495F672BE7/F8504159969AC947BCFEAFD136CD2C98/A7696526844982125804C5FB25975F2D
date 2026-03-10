@@ -1,0 +1,14 @@
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+// Use fully-qualified model types in signatures to avoid ambiguity with System.Threading.Tasks.Task
+
+namespace AutoFeed_Backend_Services.Interfaces;
+
+public interface ITaskService
+{
+    System.Threading.Tasks.Task<System.Collections.Generic.List<AutoFeed_Backend_DAO.Models.Task>> GetAllAsync();
+    System.Threading.Tasks.Task<AutoFeed_Backend_DAO.Models.Task?> GetByIdAsync(int id);
+    System.Threading.Tasks.Task<AutoFeed_Backend_DAO.Models.Task> CreateAsync(AutoFeed_Backend_DAO.Models.Task model);
+    System.Threading.Tasks.Task<bool> UpdateAsync(AutoFeed_Backend_DAO.Models.Task model);
+    Task<bool> DeleteAsync(int id);
+}

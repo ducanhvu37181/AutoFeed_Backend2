@@ -9,9 +9,15 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.13" />
   </ItemGroup>
-
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\AutoFeed_Backend_DAO\AutoFeed_Backend_DAO.csproj" />
+    <ProjectReference Include="..\AutoFeed_Backend_Repositories\AutoFeed_Backend_Repositories.csproj" />
+    <ProjectReference Include="..\AutoFeed_Backend_Services\AutoFeed_Backend_Services.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
 </Project>

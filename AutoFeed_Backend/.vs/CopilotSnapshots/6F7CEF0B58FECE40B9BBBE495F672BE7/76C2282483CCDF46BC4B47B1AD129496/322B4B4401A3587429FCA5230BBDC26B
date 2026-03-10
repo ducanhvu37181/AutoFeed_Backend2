@@ -1,0 +1,59 @@
+﻿using AutoFeed_Backend_DAO.Models;
+using AutoFeed_Backend_Repositories.BasicRepo;
+using AutoFeed_Backend_Repositories.UnitOfWork;
+using AutoFeed_Backend_Services.Interfaces;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using TaskEntity = AutoFeed_Backend_DAO.Models.Task;
+
+namespace AutoFeed_Backend_Services.Services;
+
+public class TaskService : ITaskService
+{
+    private readonly IUnitOfWork _uow;
+
+    public TaskService(IUnitOfWork uow)
+    {
+        _uow = uow;
+    }
+
+    public async Task<TaskEntity> CreateAsync(TaskEntity model)
+    {
+        var repo = _uow.Repository<TaskEntity>();
+        model.TaskId = 0;
+        await repo.CreateAsync(model);
+        return model;
+    }
+
+    public async Task<bool> DeleteAsync(int id)
+    {
+        var repo = _uow.Repository<TaskEntity>();
+        var existing = await repo.GetByIdAsync(id);
+        if (existing == null) return false;
+        // Soft-delete: set Status to false and update
+        existing.Status = false;
+        await repo.UpdateAsync(existing);
+        return true;
+    }
+
+    public async Task<List<TaskEntity>> GetAllAsync()
+    {
+        var repo = _uow.Repository<TaskEntity>();
+        return await repo.GetAllAsync();
+    }
+
+    public async Task<TaskEntity?> GetByIdAsync(int id)
+    {
+        var repo = _uow.Repository<TaskEntity>();
+        return await repo.GetByIdAsync(id);
+    }
+
+    public async Task<bool> UpdateAsync(TaskEntity model)
+    {
+        var repo = _uow.Repository<TaskEntity>();
+        var existing = await repo.GetByIdAsync(model.TaskId);
+        if (existing == null) return false;
+        await repo.UpdateAsync(model);
+        return true;
+    }
+}
