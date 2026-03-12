@@ -21,6 +21,8 @@ public partial class LargeChicken
 
     public string Note { get; set; }
 
+    public bool IsActive { get; set; }
+
     public virtual ChickenBarn ChickenBarn { get; set; }
 
     public virtual FeedingRule FeedingRule { get; set; }

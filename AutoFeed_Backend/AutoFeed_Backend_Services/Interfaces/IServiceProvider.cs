@@ -4,4 +4,6 @@ public interface IServiceProvider
 {
     ITaskService TaskService { get; }
     IScheduleService ScheduleService { get; }
+    ILargeChickenService LargeChickenService { get; }
+    IUserService UserService { get; }
 }
