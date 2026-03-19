@@ -59,3 +59,7 @@ nunit-*.xml
 *.suo
 *.userosscache
 *.sln.docstates
+nunit-*.xml
+/AutoFeed_Backend/.vs/AutoFeed_Backend.slnx/FileContentIndex
+/.gitignore
+/.gitignore

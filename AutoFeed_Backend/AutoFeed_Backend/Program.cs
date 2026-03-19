@@ -13,8 +13,11 @@ builder.Services.AddDbContext<AutoFeed_Backend_DAO.Models.AutoFeedDBContext>(opt
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Register application services
+builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITaskService, TaskService>();
 builder.Services.AddScoped<IScheduleService, ScheduleService>();
+builder.Services.AddScoped<ILargeChickenService, LargeChickenService>();
+builder.Services.AddScoped<IUserService, UserService>();
 // Register UnitOfWork
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
