@@ -1,69 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\",
+  "WorkspaceRootPath": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\dtos\\schedule\\scheduleresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63F28523-350F-80BB-72B4-8053F9AA5471}|AutoFeed_Backend\\AutoFeed_Backend.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{63F28523-350F-80BB-72B4-8053F9AA5471}|AutoFeed_Backend\\AutoFeed_Backend.csproj|solutionrelative:autofeed_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\dtos\\schedule\\scheduleresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\dtos\\schedule\\scheduleresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\dtos\\schedule\\scheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\dtos\\schedule\\scheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\dtos\\schedule\\scheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\dtos\\schedule\\createscheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\dtos\\schedule\\createscheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\dtos\\schedule\\createscheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63F28523-350F-80BB-72B4-8053F9AA5471}|AutoFeed_Backend\\AutoFeed_Backend.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend\\controllers\\schedulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63F28523-350F-80BB-72B4-8053F9AA5471}|AutoFeed_Backend\\AutoFeed_Backend.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend\\controllers\\schedulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63F28523-350F-80BB-72B4-8053F9AA5471}|AutoFeed_Backend\\AutoFeed_Backend.csproj|solutionrelative:autofeed_backend\\controllers\\schedulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\dtos\\task\\taskresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\dtos\\task\\taskresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\dtos\\task\\taskresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63F28523-350F-80BB-72B4-8053F9AA5471}|AutoFeed_Backend\\AutoFeed_Backend.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63F28523-350F-80BB-72B4-8053F9AA5471}|AutoFeed_Backend\\AutoFeed_Backend.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63F28523-350F-80BB-72B4-8053F9AA5471}|AutoFeed_Backend\\AutoFeed_Backend.csproj|solutionrelative:autofeed_backend\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\dtos\\responses\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\dtos\\responses\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\dtos\\responses\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\dtos\\schedule\\updatescheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\dtos\\schedule\\updatescheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\dtos\\schedule\\updatescheduledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\dtos\\task\\updatetaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\dtos\\task\\updatetaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\dtos\\task\\updatetaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\dtos\\task\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\dtos\\task\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\dtos\\task\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\dtos\\task\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\dtos\\task\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\dtos\\task\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\services\\scheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\services\\scheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\services\\scheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\services\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\services\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\services\\serviceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\interfaces\\ischeduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\interfaces\\ischeduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\interfaces\\ischeduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|c:\\users\\admin\\documents\\github\\autofeed_backend\\autofeed_backend\\autofeed_backend_services\\interfaces\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|d:\\autofeed_backend2\\autofeed_backend\\autofeed_backend_services\\interfaces\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81AE0945-AC4A-61F7-3C4E-F85B4DA01956}|AutoFeed_Backend_Services\\AutoFeed_Backend_Services.csproj|solutionrelative:autofeed_backend_services\\interfaces\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -79,62 +83,72 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "AutoFeed_Backend\\appsettings.json",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend\\appsettings.json",
+              "RelativeToolTip": "AutoFeed_Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-19T17:28:33.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ScheduleResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleResponseDto.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleResponseDto.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleResponseDto.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleResponseDto.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleResponseDto.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T09:58:22.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "TaskResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\TaskResponseDto.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\TaskResponseDto.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\DTOs\\Task\\TaskResponseDto.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\TaskResponseDto.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\TaskResponseDto.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\DTOs\\Task\\TaskResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T09:55:29.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T09:55:29.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CreateScheduleDto.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\CreateScheduleDto.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\CreateScheduleDto.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\DTOs\\Schedule\\CreateScheduleDto.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\CreateScheduleDto.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\CreateScheduleDto.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\DTOs\\Schedule\\CreateScheduleDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAlwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T09:45:40.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T09:45:40.989Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ApiResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Responses\\ApiResponse.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Responses\\ApiResponse.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\DTOs\\Responses\\ApiResponse.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Responses\\ApiResponse.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Responses\\ApiResponse.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\DTOs\\Responses\\ApiResponse.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA5wBIAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T09:19:00.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T09:19:00.611Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ServiceProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\ServiceProvider.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\ServiceProvider.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\Services\\ServiceProvider.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\ServiceProvider.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\ServiceProvider.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\Services\\ServiceProvider.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -142,11 +156,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TaskDto.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\TaskDto.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\TaskDto.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\DTOs\\Task\\TaskDto.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\TaskDto.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\TaskDto.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\DTOs\\Task\\TaskDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -154,11 +168,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IScheduleService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Interfaces\\IScheduleService.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Interfaces\\IScheduleService.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\Interfaces\\IScheduleService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Interfaces\\IScheduleService.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Interfaces\\IScheduleService.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\Interfaces\\IScheduleService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -166,11 +180,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ITaskService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Interfaces\\ITaskService.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Interfaces\\ITaskService.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\Interfaces\\ITaskService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Interfaces\\ITaskService.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Interfaces\\ITaskService.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\Interfaces\\ITaskService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -178,37 +192,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SchedulesController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend\\Controllers\\SchedulesController.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend\\Controllers\\SchedulesController.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend\\Controllers\\SchedulesController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend\\Controllers\\SchedulesController.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend\\Controllers\\SchedulesController.cs",
               "RelativeToolTip": "AutoFeed_Backend\\Controllers\\SchedulesController.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAAEYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T06:59:45.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T06:59:45.456Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TasksController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend\\Controllers\\TasksController.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend\\Controllers\\TasksController.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend\\Controllers\\TasksController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend\\Controllers\\TasksController.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend\\Controllers\\TasksController.cs",
               "RelativeToolTip": "AutoFeed_Backend\\Controllers\\TasksController.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAMwBYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T06:59:41.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T06:59:41.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "TaskService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\TaskService.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\TaskService.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\Services\\TaskService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\TaskService.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\TaskService.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\Services\\TaskService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -216,24 +228,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UpdateScheduleDto.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\UpdateScheduleDto.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\UpdateScheduleDto.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\DTOs\\Schedule\\UpdateScheduleDto.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\UpdateScheduleDto.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\UpdateScheduleDto.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\DTOs\\Schedule\\UpdateScheduleDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T06:59:11.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T06:59:11.049Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ScheduleService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\ScheduleService.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\ScheduleService.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\Services\\ScheduleService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\ScheduleService.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\Services\\ScheduleService.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\Services\\ScheduleService.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAuwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -241,42 +252,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ScheduleDto.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleDto.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleDto.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleDto.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleDto.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleDto.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\DTOs\\Schedule\\ScheduleDto.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAlwBEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T06:59:01.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UpdateTaskDto.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\UpdateTaskDto.cs",
-              "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\DTOs\\Task\\UpdateTaskDto.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\UpdateTaskDto.cs",
-              "RelativeToolTip": "AutoFeed_Backend_Services\\DTOs\\Task\\UpdateTaskDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T06:58:56.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T06:59:01.077Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "UpdateTaskDto.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\UpdateTaskDto.cs",
+              "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\DTOs\\Task\\UpdateTaskDto.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\UpdateTaskDto.cs",
+              "RelativeToolTip": "AutoFeed_Backend_Services\\DTOs\\Task\\UpdateTaskDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T06:58:56.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "CreateTaskDto.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\CreateTaskDto.cs",
+              "DocumentMoniker": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\CreateTaskDto.cs",
               "RelativeDocumentMoniker": "AutoFeed_Backend_Services\\DTOs\\Task\\CreateTaskDto.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\AutoFeed_Backend\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\CreateTaskDto.cs",
+              "ToolTip": "D:\\AutoFeed_Backend2\\AutoFeed_Backend\\AutoFeed_Backend_Services\\DTOs\\Task\\CreateTaskDto.cs",
               "RelativeToolTip": "AutoFeed_Backend_Services\\DTOs\\Task\\CreateTaskDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T06:58:51.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T06:58:51.922Z"
             }
           ]
         }
