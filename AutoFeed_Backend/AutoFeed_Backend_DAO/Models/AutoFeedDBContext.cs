@@ -94,6 +94,9 @@ public partial class AutoFeedDBContext : DbContext
             entity.Property(e => e.Type)
                 .HasMaxLength(50)
                 .HasColumnName("type");
+            entity.Property(e => e.Status)
+                .HasDefaultValue(true)
+                .HasColumnName("status");
         });
 
         modelBuilder.Entity<BarnIoTDevice>(entity =>

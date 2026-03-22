@@ -17,6 +17,8 @@ public partial class Barn
 
     public decimal? Area { get; set; }
 
+    public bool Status { get; set; }
+
     public DateTime? CreateDate { get; set; }
 
     public virtual ICollection<BarnIoTDevice> BarnIoTDevices { get; set; } = new List<BarnIoTDevice>();

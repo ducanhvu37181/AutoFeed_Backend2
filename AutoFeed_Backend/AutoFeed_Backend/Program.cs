@@ -14,6 +14,8 @@ builder.Services.AddDbContext<AutoFeed_Backend_DAO.Models.AutoFeedDBContext>(opt
 
 // Register application services
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IBarnService, BarnService>();
+builder.Services.AddScoped<IFlockChickenService, FlockChickenService>();
 builder.Services.AddScoped<ITaskService, TaskService>();
 builder.Services.AddScoped<IScheduleService, ScheduleService>();
 builder.Services.AddScoped<ILargeChickenService, LargeChickenService>();
@@ -29,6 +31,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "AutoFeed API", Version = "v1" });
+});
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFE",
+        policy => policy
+            .WithOrigins("http://localhost:5173")
+            .AllowAnyMethod()
+            .AllowAnyHeader());
 });
 
 var app = builder.Build();
